@@ -14,6 +14,9 @@ $autoloader->addNamespace('App', __DIR__ . '/../src');
 $autoloader->register();
 
 require __DIR__ . '/../helpers.php';
-
+$data= new \App\Utils\Config();
+$data=$data->get();
+var_dump($data);
+exit();
 $router = new Router();
 $router->process();

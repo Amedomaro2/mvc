@@ -77,7 +77,6 @@ class Ads
     {
         return $this->title;
     }
-
     public function getBody(): string
     {
         return $this->body;
