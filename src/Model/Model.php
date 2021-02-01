@@ -25,7 +25,7 @@ abstract class Model
         $result = $stm->fetch(\PDO::FETCH_ASSOC);
         return $result ? $result : [];
     }
-
+    // удаление
     public static function remove(int $id)
     {
         $db = self::getDb();
